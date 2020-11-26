@@ -1,0 +1,109 @@
+body{
+    background: rgb(110, 150, 160);
+}
+
+.contenedor {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin: 5em auto;
+    perspective: 700px;
+}
+
+.cubo,
+.caras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.cubo{
+    transform-style: preserve-3d;
+    animation: giracubo 7s infinite linear;
+    
+}
+
+@keyframes giracubo {
+    from {
+        transform: rotateY(0);
+
+    to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes giracubo2 {
+    from {
+        transform: rotateX(0);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+}
+
+.carasInferiores{
+    float: left;
+    width: 32%;
+    height: 32%;
+    border: 1px solid rgba(0, 0, 0, 0.255);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.317);
+}
+
+
+#uno{
+    transform: translateZ(175px);
+    border-radius: 10px;
+    background-image: url(https://i.ibb.co/hFV4x4X/cubo-menu.png);
+    background-size:100% 100% ;
+
+}
+
+ 
+
+#dos{
+    /* background: linear-gradient(35deg, #f96711, #8a0f47); */
+    transform: translateX(175px) rotateY(90deg);
+    border-radius: 10px;
+    background-image: url(https://i.ibb.co/8jpZQyH/completo-logo.png);
+    background-size:100% 100% ;
+
+}
+
+
+
+#tres{
+    transform: translateZ(-175px);
+    border-radius: 10px;
+    background-image: url(https://i.ibb.co/db8nDjG/cubo-headers.png);
+    background-size:100% 100% ;
+
+    }
+
+
+#cuatro{
+    background: linear-gradient(35deg, #f96711, #8a0f47);
+    transform: translateX(-175px) rotateY(90deg);
+    border-radius: 10px;
+    background-image: url(https://i.ibb.co/HNYDG45/cubo-galerias.png);
+    background-size:100% 100% ;
+
+    }
+
+#cinco{
+    background: linear-gradient(35deg, #f96711, #8a0f47);
+    transform: translateY(-175px) rotateX(90deg);
+    border-radius: 10px;
+    background-image: url(https://i.ibb.co/6NQm27X/cubo-footers.png);
+    background-size:100% 100% ;
+
+    }
+
+#seis{
+    background: linear-gradient(35deg, #f96711, #8a0f47);
+    transform: translateY(175px) rotateX(90deg);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10pc black;
+    background-image:url(https://i.ibb.co/jGBHmRZ/cubo-contacto.png);
+    background-size:100% 100% ;
+        
+
+    }

@@ -1,0 +1,19 @@
+{
+  "name": "cubo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "correr": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live": "^0.1.25-beta.0",
+    "live-server": "^1.2.1",
+    "server": "^1.0.31"
+  },
+  "dependencies": {},
+  "description": ""
+}
